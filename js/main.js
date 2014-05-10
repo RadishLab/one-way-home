@@ -6,12 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
   pop.footnote({
    start: 2,
    end: 6,
-   text: "What is your name?",
+   text: "Hello, Darling",
    target: "caption",
    effect: "applyclass",
-
-
   });
+  pop.footnote({
+   start: 7,
+   end: 10,
+   text: "What is your name?",
+   target: "caption1",
+   effect: "applyclass",
+  });
+
 
   // play the video right away
   pop.autoplay("true");
