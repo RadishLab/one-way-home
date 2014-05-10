@@ -6,12 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
   pop.footnote({
    start: 2,
    end: 6,
-   text: "Pop!",
-   target: "caption"
+   text: "What is your name?",
+   target: "caption",
+   effect: "applyclass",
+
+
   });
 
   // play the video right away
-  pop.play();
+  pop.autoplay("true");
 }, false);
 
 var myApp = angular.module('myApp',[]);
