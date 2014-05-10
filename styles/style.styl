@@ -7,6 +7,11 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
   //Defintions
 
+screen-color()
+  rgb(2,25,6)
+type-color()
+  rgb(0,217,36)
+
 fontsize($sizevalue = 2)
   font-size $sizevalue * 16 px
   font-size $sizevalue * 1 rem
@@ -22,11 +27,11 @@ a
   outline none
 
 body
-  font-family 'ocr-a-std'
+  font-family 'ocr-a-std', "Courier New", Courier, monospace
   font-weight 300
   height 100%
-  color green
-  background-color darkgray
+  color type-color()
+  background-color screen-color()
 .title
   width 100%
   text-transform uppercase
@@ -90,4 +95,3 @@ video
   .view
     width 80%
     margin 0 auto
-

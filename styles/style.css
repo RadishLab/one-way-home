@@ -197,11 +197,11 @@ a {
   outline: none;
 }
 body {
-  font-family: 'ocr-a-std';
+  font-family: 'ocr-a-std', "Courier New", Courier, monospace;
   font-weight: 300;
   height: 100%;
-  color: #008000;
-  background-color: #a9a9a9;
+  color: #00d924;
+  background-color: #021906;
 }
 .title {
   width: 100%;
