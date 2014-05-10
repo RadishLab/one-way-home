@@ -230,6 +230,9 @@ ul ul {
   font-size: 0.75rem;
 }
 @media (max-width: 64em) {
+  header {
+    padding: 1em;
+  }
   .view {
     width: 80%;
     margin: 0 auto;
