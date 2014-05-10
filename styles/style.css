@@ -201,7 +201,7 @@ body {
   font-weight: 300;
   height: 100%;
   color: #00d924;
-  background-color: #021906;
+  background-color: #000;
 }
 .title {
   width: 100%;
@@ -253,11 +253,12 @@ video {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding: 3px;
 }
 .mask {
   background-image: url("../images/screen-mask.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   position: absolute;
   background-position: center center;
   top: 0;
