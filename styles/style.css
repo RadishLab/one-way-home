@@ -233,7 +233,7 @@ ul ul {
 }
 #container {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   z-index: 900;
 }
@@ -265,6 +265,7 @@ video {
   width: 100%;
   height: 100%;
   z-index: 1100;
+  display: none;
 }
 .button,
 .ng-valid,
