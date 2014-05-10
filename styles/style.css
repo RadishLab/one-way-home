@@ -197,9 +197,10 @@ a {
   outline: none;
 }
 body {
-  font-family: 'Open Sans';
+  font-family: "ocr-a-std", "Courier New", Courier, monospace;
   font-weight: 300;
   background-color: #000;
+  color: #00d924;
 }
 .title {
   width: 100%;
