@@ -1,0 +1,58 @@
+//Fallbacks
+@require 'normalize.styl'
+/* apply a natural box layout model to all elements */
+*
+*:before
+*:after 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  //Defintions
+
+blue()
+  rgb(26,183,234)
+
+fontsize($sizevalue = 2)
+  font-size $sizevalue * 16 px
+  font-size $sizevalue * 1 rem
+//More resets
+ul
+nav
+  padding 0
+  margin 0
+  li
+    list-style-type none
+a
+  text-decoration none
+  outline none
+
+body
+  font-family 'Open Sans'
+  font-weight 300
+.title
+  width 100%
+  text-transform uppercase
+h1
+  font-weight 300
+  fontsize(2.15) 
+
+nav
+  width 25%
+  float left
+  font-weight 300
+  fontsize(1)
+  color grey
+  a
+    color grey
+  a:hover
+   text-decoration line-through
+   color blue()
+ul
+  ul
+    margin-left 1em
+    fontsize(0.75)
+
+@media (max-width: 64em)
+  header
+    padding
+  .view
+    width 80%
+    margin 0 auto
