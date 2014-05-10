@@ -1,31 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>One Way Home</title>
-  <script src="//use.typekit.net/vpe1nqx.js%20%3Chttp://use.typekit.net/vpe1nqx.js%3E" type="text/javascript"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
-  <script type="text/javascript">
-    try{Typekit.load();}catch(e){}
-  </script>
-  <script type="text/js" src="/js/angular/angular.min.js"></script>
-  <link href="styles/style.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>One Way Home</title>
+<script type="text/javascript" src="http://use.typekit.net/vpe1nqx.js>"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
+<script src="/js/main.js"></script>
+<link href="styles/style.css" rel="stylesheet">
 </head>
-<body ng-app="">
-  <div class="title">
-    <h1>One Way Home</h1>
-  </div>
-  <div ng-controller="Ctrl">
-    Enter name: <input type="text" ng-model="name"><br>
-    Hello <span ng-bind="name"></span>!
-  </div>
-  <script>
-  function Ctrl($scope) {
-    $scope.name = 'Whirled';
-  }
-</script>
-<script type="text/js" src="/js/jquery/jquery.min.js"></script>
-<script type="text/js" src="/js/main.js"></script>
+<body ng-app="myApp" class="ng-scope">
+<video>
+  <source src="video/flag-waving.mp4">
+</video>
+<div ng-controller="MyCtrl">
+  <input type="text" ng-model="name" />
+
+  <br/>
+  
+  <input type="text" ng-model="updatedname" />
+  
+  <input type="button" value="Change name" ng-click="changeName(updatedname)"/>
+  <br/>
+    Hello, Darling.
+    What is your name?
+    Hello, {{name}}. My name is Rodd.
+</div>
+<script src="/js/jquery/jquery.min.js"></script>
 </body>
 </html>
