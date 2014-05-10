@@ -1,0 +1,9 @@
+{
+  "name": "one-way-home",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "*",
+    "jquery": "~1.10.2"
+  },
+  "private": true
+}
