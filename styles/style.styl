@@ -9,7 +9,7 @@
 
 green()
   rgb(0,217,36)
-  
+
 fontsize($sizevalue = 2)
   font-size $sizevalue * 16 px
   font-size $sizevalue * 1 rem
@@ -27,6 +27,7 @@ a
 body
   font-family 'Open Sans'
   font-weight 300
+  background-color black
 .title
   width 100%
   text-transform uppercase
@@ -44,11 +45,22 @@ nav
     color grey
   a:hover
    text-decoration line-through
-   color blue()
+   color green()
 ul
   ul
     margin-left 1em
     fontsize(0.75)
+.mask
+  background-image url("../images/screen-mask.svg")
+  background-repeat no-repeat
+  background-size contain
+  position absolute
+  background-position center center
+  top 0
+  left 0
+  width 100%
+  height 100%
+
 
 @media (max-width: 64em)
   header
