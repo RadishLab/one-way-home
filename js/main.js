@@ -277,6 +277,7 @@ $(document).ready(function(){
   });
   $("#one").mouseleave(function() {
     one.pause();
+    one.currentTime = 0;
   });
 
   var two = $("#two audio")[0];
