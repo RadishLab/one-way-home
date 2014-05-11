@@ -174,13 +174,13 @@ arcs.arc([
   },
   {
     origin: {
-    latitude: 32.78,
-    longitude: -96.8
+      latitude: 32.78,
+      longitude: -96.8
     },
     destination: {
-    //Lubbock, TX,
-    latitude:33.57
-    longitude: -101.85
+      //Lubbock, TX,
+      latitude:33.57,
+      longitude: -101.85
     }
   },
   {
@@ -190,7 +190,7 @@ arcs.arc([
     },
     destination: {
       //Peru, Indiana
-      latitude:40.75,
+      latitude: 40.75,
       longitude: -86.06
     }
   },
@@ -221,9 +221,8 @@ arcs.arc([
       latitude: 32.78,
       longitude: -96.8
     },
-    {
     destination: {
-    //Odessa, TX
+      //Odessa, TX
       latitude:31.84,
       longitude: -102.36
     },
@@ -245,7 +244,7 @@ arcs.arc([
       longitude: -96.8
     },
     destination: {
-    //Indianapolis, IN
+      //Indianapolis, IN
       latitude:39.76,
       longitude: -86.15
     },
@@ -256,7 +255,7 @@ arcs.arc([
       longitude: -96.8
     },
     destination: {
-    //Jackson, MS
+      //Jackson, MS
       latitude:32.29,
       longitude: -90.18
     }
