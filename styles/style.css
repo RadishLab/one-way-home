@@ -200,17 +200,23 @@ body {
   font-family: 'ocr-a-std', "Courier New", Courier, monospace;
   font-weight: 300;
   height: 100%;
-  color: #00d924;
-  background-color: #000;
+  color: #0c0c0c;
+  background: linear-gradient(45deg, #fffdf3 0%, #fffade 100%);
 }
-.title {
+header {
   width: 100%;
   text-transform: uppercase;
+  text-align: center;
+  background-color: #fff;
+  padding: 2em 0;
+  vertical-align: middle;
+  border-bottom: solid 1px #fffade;
 }
 h1 {
   font-weight: 300;
   font-size: 34.4px;
   font-size: 2.15rem;
+  display: inline-block;
 }
 nav {
   width: 25%;
@@ -236,36 +242,6 @@ ul ul {
   height: auto;
   position: absolute;
   z-index: 900;
-}
-.terminal {
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 90%;
-  top: 300px;
-  z-index: 2000;
-  font-size: 48px;
-  font-size: 3rem;
-  position: absolute;
-  text-align: center;
-}
-video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 3px;
-}
-.mask {
-  background-image: url("../images/screen-mask.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  background-position: center center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1100;
 }
 .button,
 .ng-valid,

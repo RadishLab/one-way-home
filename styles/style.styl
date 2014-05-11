@@ -7,10 +7,10 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
   //Defintions
 
-screen-color()
-  rgb(2,25,6)
+body-color()
+  background linear-gradient(45deg, rgb(255,253,243) 0%, rgb(255,250,222) 100%)
 type-color()
-  rgb(0,217,36)
+  rgb(12,12,12)
 
 fontsize($sizevalue = 2)
   font-size $sizevalue * 16 px
@@ -31,14 +31,19 @@ body
   font-weight 300
   height 100%
   color type-color()
-  background-color black
-.title
+  body-color()
+header
   width 100%
   text-transform uppercase
+  text-align center
+  background-color white
+  padding 2em 0
+  vertical-align middle
+  border-bottom solid 1px rgb(255,250,222)
 h1
   font-weight 300
   fontsize(2.15)
-
+  display inline-block
 nav
   width 25%
   float left
@@ -58,32 +63,8 @@ ul
   height auto
   position absolute
   z-index 900
-.terminal
-  left 0
-  right 0
-  margin 0 auto
-  width 90%
-  top 300px
-  z-index 2000
-  fontsize(3)
-  position absolute
-  text-align center
-video
-  position absolute
-  width 100%
-  height 100%
-  padding 3px
-.mask
-  background-image url("../images/screen-mask.svg")
-  background-repeat no-repeat
-  background-size 100% 100%
-  position absolute
-  background-position center center
-  top 0
-  left 0
-  width 100%
-  height 100%
-  z-index 1100
+
+
 .button
 .ng-valid
 .update
