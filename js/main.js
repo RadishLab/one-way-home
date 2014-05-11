@@ -75,7 +75,11 @@ var arcsAll = new Datamap({
     'CA': { fillKey: 'win' },
     'NY': { fillKey: 'win' },
     'CO': { fillKey: 'win' }
+  },
+  arcConfig : {
+    animationSpeed: 50000
   }
+
 });
 arcsAll.arc([
   {
@@ -342,6 +346,7 @@ $(document).ready(function(){
   });
   $("#two").mouseleave(function() {
     two.pause();
+    two.currentTime = 0;
   });
 
   var three = $("#three audio")[0];
@@ -350,6 +355,7 @@ $(document).ready(function(){
   });
   $("#three").mouseleave(function() {
     three.pause();
+    three.currentTime = 0;
   });
 
   var four = $("#four audio")[0];
@@ -357,18 +363,19 @@ $(document).ready(function(){
     four.play();
   });
   $("#four").mouseleave(function() {
-    four.pause();
+    four.pause()
+    four.currentTime = 0;
   });
   var five = $("#five audio")[0];
   $("#five").mouseenter(function() {
     five.play();
   });
   $("#five").mouseleave(function() {
-    five.pause();
+    five.pause()
+    five.currentTime = 0;
   });
 
   $(function() {
-    $( "#accordion" ).accordion();
   });
 });
 
