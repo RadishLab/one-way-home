@@ -1,3 +1,7 @@
+
+
+
+
 var arcs = new Datamap({
   element: document.getElementById("map"),
   scope: 'usa',
@@ -17,7 +21,63 @@ var arcs = new Datamap({
     'CO': { fillKey: 'win' }
   }
 });
+
 arcs.arc([
+  {
+    origin: {
+      latitude: 32.78,
+      longitude: -96.8
+    },
+    destination: {
+    //Breckenridge, TX
+      latitude:32.75,
+      longitude: -98.9
+    }
+  }
+],  {strokeWidth: 1, arcSharpness: 1.4
+
+
+});
+
+
+var datas = [{
+        name: 'Breckenridge, TX',
+        radius: 10,
+        fillKey: 'win',
+        latitude:32.75,
+        longitude: -98.9
+      }
+
+    ];
+arcs.bubbles(datas, {
+    popupTemplate: function (geo, data) {
+            return ['<div class="hoverinfo">' +  data.name,
+            '</div>'].join('');
+    }
+});
+
+
+
+var arcsAll = new Datamap({
+  element: document.getElementById("map-all"),
+  scope: 'usa',
+  fills: {
+    defaultFill: 'rgba(211,209,167,0.9)' //any hex, color name or rgb/rgba value
+  },
+  geographyConfig: {
+    highlightOnHover: false,
+    popupOnHover: false
+  },
+  data: {
+    'TX': { fillKey: 'win' },
+    'FL': { fillKey: 'win' },
+    'NC': { fillKey: 'win' },
+    'CA': { fillKey: 'win' },
+    'NY': { fillKey: 'win' },
+    'CO': { fillKey: 'win' }
+  }
+});
+arcsAll.arc([
   {
     origin: {
       latitude: 32.78,
@@ -264,3 +324,51 @@ arcs.arc([
 
 
 });
+
+var One = $("#one audio")[0];
+
+$(document).ready(function(){
+  var one = $("#one audio")[0];
+  $("#one").mouseenter(function() {
+    one.play();
+  });
+  $("#one").mouseleave(function() {
+    one.pause();
+  });
+
+  var two = $("#two audio")[0];
+  $("#two").mouseenter(function() {
+    two.play();
+  });
+  $("#two").mouseleave(function() {
+    two.pause();
+  });
+
+  var three = $("#three audio")[0];
+  $("#three").mouseenter(function() {
+    three.play();
+  });
+  $("#three").mouseleave(function() {
+    three.pause();
+  });
+
+  var four = $("#four audio")[0];
+  $("#four").mouseenter(function() {
+    four.play();
+  });
+  $("#four").mouseleave(function() {
+    four.pause();
+  });
+  var five = $("#five audio")[0];
+  $("#five").mouseenter(function() {
+    five.play();
+  });
+  $("#five").mouseleave(function() {
+    five.pause();
+  });
+
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+});
+
