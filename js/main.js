@@ -268,53 +268,56 @@ arcsAll.arc([
 
 });
 
-var One = $("#one audio")[0];
-
 $(document).ready(function(){
   var one = $("#one audio")[0];
   $("#one").mouseenter(function() {
     one.play();
+    $("#one > div").addClass("play");
   });
   $("#one").mouseleave(function() {
     one.pause();
     one.currentTime = 0;
+    $("#one > div").removeClass("play");
   });
-
   var two = $("#two audio")[0];
   $("#two").mouseenter(function() {
     two.play();
+    $("#two > div").addClass("play");
   });
   $("#two").mouseleave(function() {
     two.pause();
     two.currentTime = 0;
+    $("#two > div").removeClass("play");
   });
-
   var three = $("#three audio")[0];
   $("#three").mouseenter(function() {
     three.play();
+    $("#three > div").addClass("play");
   });
   $("#three").mouseleave(function() {
     three.pause();
     three.currentTime = 0;
+    $("#three > div").removeClass("play");
   });
-
   var four = $("#four audio")[0];
   $("#four").mouseenter(function() {
     four.play();
+    $("#four > div").addClass("play");
   });
   $("#four").mouseleave(function() {
     four.pause()
     four.currentTime = 0;
+    $("#four > div").removeClass("play");
   });
   var five = $("#five audio")[0];
   $("#five").mouseenter(function() {
     five.play();
+    $("#five > div").addClass("play");
   });
   $("#five").mouseleave(function() {
     five.pause()
     five.currentTime = 0;
-  });
+    $("#five > div").removeClass("play");
 
-  $(function() {
   });
 });
