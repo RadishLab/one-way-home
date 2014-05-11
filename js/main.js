@@ -1,63 +1,3 @@
-
-
-
-
-var arcs = new Datamap({
-  element: document.getElementById("map"),
-  scope: 'usa',
-  fills: {
-  defaultFill: 'rgba(249,225,206,0.9)' //any hex, color name or rgb/rgba value
-  },
-  geographyConfig: {
-    highlightOnHover: false,
-    popupOnHover: false
-  },
-  data: {
-    'TX': { fillKey: 'win' },
-    'FL': { fillKey: 'win' },
-    'NC': { fillKey: 'win' },
-    'CA': { fillKey: 'win' },
-    'NY': { fillKey: 'win' },
-    'CO': { fillKey: 'win' }
-  }
-});
-
-arcs.arc([
-  {
-    origin: {
-      latitude: 32.78,
-      longitude: -96.8
-    },
-    destination: {
-    //Breckenridge, TX
-      latitude:32.75,
-      longitude: -98.9
-    }
-  }
-],  {strokeWidth: 1, arcSharpness: 1.4
-
-
-});
-
-
-var datas = [{
-        name: 'Breckenridge, TX',
-        radius: 10,
-        fillKey: 'win',
-        latitude:32.75,
-        longitude: -98.9
-      }
-
-    ];
-arcs.bubbles(datas, {
-    popupTemplate: function (geo, data) {
-            return ['<div class="hoverinfo">' +  data.name,
-            '</div>'].join('');
-    }
-});
-
-
-
 var arcsAll = new Datamap({
   element: document.getElementById("map-all"),
   scope: 'usa',
@@ -77,10 +17,9 @@ var arcsAll = new Datamap({
     'CO': { fillKey: 'win' }
   },
   arcConfig : {
-    animationSpeed: 50000
   }
-
 });
+
 arcsAll.arc([
   {
     origin: {
@@ -324,7 +263,7 @@ arcsAll.arc([
       longitude: -90.18
     }
   },
-],  {strokeWidth: 1, arcSharpness: 1.4, strokeColor: 'rgba(243,163,114,1)'
+],  {strokeWidth: 1, arcSharpness: 1.4, strokeColor: 'rgba(243,163,114,1)', animationSpeed: 50000
 
 
 });
