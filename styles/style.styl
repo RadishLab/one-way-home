@@ -6,20 +6,17 @@
 *:after
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 //Defintions
-tan()
+white()
+  rgb(210,208,210)
+pink()
   rgb(249,225,206)
-yellow()
-  rgb(249,225,206)
-orange()
-  rgb(243,163,114)
+fuchsia()
+  rgb(215,116,164)
 red()
-  rgb(241,117,78)
-brown()
-  rgb(116,83,81)
-body-color()
-  background linear-gradient(45deg, rgb(255,253,243) 0%, rgb(255,250,222) 100%)
-type-color()
-  rgb(12,12,12)
+  rgb(211,78,106)
+auburn()
+  rgb(197,64,70)
+
 
 fontsize($sizevalue = 2)
   font-size $sizevalue * 16 px
@@ -39,16 +36,16 @@ body
   font-family 'ocr-a-std', "Courier New", Courier, monospace
   font-weight 300
   height 100%
-  color type-color()
-  body-color()
+  color brown()
+  background-color white
 header
   width 100%
   text-transform uppercase
   text-align center
-  background-color white
+  color white
+  background-color auburn()
   padding 2em 0
   vertical-align middle
-  border-bottom solid 1px rgb(255,250,222)
 h1
   font-weight 300
   fontsize(2)
@@ -72,10 +69,10 @@ ul
   height auto
   position absolute
   z-index 900
-#map
+#map-all
   position relative
-  width 600px 
-  height 350px
+  width 1200px
+  height 800px
   margin 0 auto
 
 
