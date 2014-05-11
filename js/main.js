@@ -6,7 +6,7 @@ var arcs = new Datamap({
   element: document.getElementById("map"),
   scope: 'usa',
   fills: {
-    defaultFill: 'rgba(211,209,167,0.9)' //any hex, color name or rgb/rgba value
+  defaultFill: 'rgba(249,225,206,0.9)' //any hex, color name or rgb/rgba value
   },
   geographyConfig: {
     highlightOnHover: false,
@@ -62,7 +62,7 @@ var arcsAll = new Datamap({
   element: document.getElementById("map-all"),
   scope: 'usa',
   fills: {
-    defaultFill: 'rgba(211,209,167,0.9)' //any hex, color name or rgb/rgba value
+  defaultFill: 'rgba(249,225,206,0.9)' //any hex, color name or rgb/rgba value
   },
   geographyConfig: {
     highlightOnHover: false,
@@ -320,7 +320,7 @@ arcsAll.arc([
       longitude: -90.18
     }
   },
-],  {strokeWidth: 1, arcSharpness: 1.4
+],  {strokeWidth: 1, arcSharpness: 1.4, strokeColor: 'rgba(243,163,114,1)'
 
 
 });
@@ -371,4 +371,3 @@ $(document).ready(function(){
     $( "#accordion" ).accordion();
   });
 });
-
