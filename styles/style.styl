@@ -5,12 +5,18 @@
 *:before
 *:after
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-  //Defintions
+//Defintions
+white()
+  rgb(210,208,210)
+pink()
+  rgb(249,225,206)
+fuchsia()
+  rgb(215,116,164)
+red()
+  rgb(211,78,106)
+auburn()
+  rgb(197,64,70)
 
-screen-color()
-  rgb(2,25,6)
-type-color()
-  rgb(0,217,36)
 
 fontsize($sizevalue = 2)
   font-size $sizevalue * 16 px
@@ -30,15 +36,20 @@ body
   font-family 'ocr-a-std', "Courier New", Courier, monospace
   font-weight 300
   height 100%
-  color type-color()
-  background-color black
-.title
+  color brown()
+  background-color white
+header
   width 100%
   text-transform uppercase
+  text-align center
+  color white
+  background-color auburn()
+  padding 2em 0
+  vertical-align middle
 h1
   font-weight 300
-  fontsize(2.15)
-
+  fontsize(2)
+  display inline-block
 nav
   width 25%
   float left
@@ -58,37 +69,47 @@ ul
   height auto
   position absolute
   z-index 900
-.terminal
-  left 0
-  right 0
+#map-all
+  position relative
+  width 1200px
+  height 800px
   margin 0 auto
-  width 90%
-  top 300px
-  z-index 2000
-  fontsize(3)
+.star
+  background-image url('../images/texas-star.svg')
+  width 30px
+  height 30px
+  background-size cover
+  margin-top 505px
+  margin-left 580px
   position absolute
-  text-align center
-video
-  position absolute
-  width 100%
-  height 100%
-  padding 3px
-.mask
-  background-image url("../images/screen-mask.svg")
-  background-repeat no-repeat
-  background-size 100% 100%
-  position absolute
-  background-position center center
-  top 0
-  left 0
-  width 100%
-  height 100%
-  z-index 1100
+h2
+  color fuchsia()
+h3
+  color auburn()
+  col
 .button
 .ng-valid
 .update
   visibility hidden
-
+h2
+h3
+  text-align center
+.words
+  max-width 1200px
+  margin 0 auto
+  img
+    width 100%
+.controls
+  width 100%
+  height 8em
+  background-color white
+  border none
+.left-arrow
+  position absolute
+  left 0
+.right-arrow
+  width 50%
+  left 0
 @media (max-width: 64em)
   header
     padding 1em
