@@ -243,6 +243,12 @@ ul ul {
   position: absolute;
   z-index: 900;
 }
+#map {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
 .button,
 .ng-valid,
 .update {
